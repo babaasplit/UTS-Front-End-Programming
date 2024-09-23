@@ -38,6 +38,7 @@
     max-width: 1200px;
     padding: 0 30px;
     margin: 0 auto;
+    position: relative;
   }
   
   .logo {
@@ -57,10 +58,13 @@
   
   .nav__list {
     display: flex;
-    column-gap: 40px;
+    column-gap: 20px;
+    margin-right: 250px;
   }
   
   .nav__item {
+    position: relative;
+    position: left;
   
   }
   
@@ -389,6 +393,24 @@ header {
 /* Gambar pada section Echo Park Home */
 .house-tour-img img {
   max-width: 400px;
+.img img {
+  max-width: 100%; /* Gambar akan bisa diubah ukurannya sesuai container */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+/* Aturan CSS untuk class decorating */
+.decorating {
+  display: flex; /* Agar gambar dan teks bisa sejajar */
+  align-items: center;
+  gap: 20px; /* Jarak antara gambar dan teks */
+  padding: 20px;
+}
+
+.decorating img {
+  max-width: 80px; /* Ukuran gambar diatur agar kecil */
   height: auto;
   border-radius: 8px;
 }
@@ -435,3 +457,29 @@ footer {
     background-color: #eee;
     margin-top: 40px;
 }
+.decorating h1 {
+  font-family: "Gowun Batang", serif;;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.decorating p {
+  font-style: "Gowun Batang", serif;;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  /* Mobile Responsive */
+  .decorating {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .decorating img {
+    max-width: 100%;
+  }
+}
+}
+
