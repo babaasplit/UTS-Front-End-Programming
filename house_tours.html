@@ -17,7 +17,7 @@
 
 
 <body>
-    <!-- Header -->
+
     <header>
         <div class="header-container">
             <div class="logo-container">
@@ -26,7 +26,7 @@
             </div>
             <div class="search-container">
                 <input type="search" placeholder="SEARCH">
-                <a href="#" class="login">L</a>
+                <a href="#" class="login">-</a>
                 <div class="menu-toggle">
                     <div class="bar"></div>
                     <div class="bar"></div>
@@ -50,7 +50,6 @@
         <span>Conquer your clutter in just 2 weeks with our free Decluttering Cure program!</span>
     </div>
 
-    <!-- Main Content (Browse Photos, etc.) -->
     <section class="content" id="content">
         <!-- Browse Photos Section -->
         <div id="browse-photos" class="content-section">
@@ -68,7 +67,7 @@
             <section class="latest-house-tour">
                 <div class="house-tour-content">
                     <div class="house-tour-img">
-                        <img src="images/jpg" alt="Echo Park Home">
+                        <img src="images/housetours1.jpg" alt="Ciputra Park Home">
                     </div>
                     <div class="house-tour-text">
                         <p class="house-tour-label">LATEST HOUSE TOUR</p>
@@ -84,22 +83,27 @@
             <h2>Decorating</h2>
             <p>Find inspiration for decorating your home.</p>
         </div>
+
         <div id="organizing" class="content-section">
             <h2>Organizing</h2>
             <p>Get tips on organizing your home space.</p>
         </div>
+
         <div id="cleaning" class="content-section">
             <h2>Cleaning</h2>
             <p>Effective cleaning techniques for your home.</p>
         </div>
+
         <div id="home-projects" class="content-section">
             <h2>Home Projects</h2>
             <p>Ideas for your next home project.</p>
         </div>
+
         <div id="plants-yards" class="content-section">
             <h2>Plants & Yards</h2>
             <p>How to make your garden thrive.</p>
         </div>
+
         <div id="community" class="content-section">
             <h2>Community</h2>
             <p>Connect with others who love home improvement.</p>
@@ -114,17 +118,20 @@
     <script>
         $(document).ready(function() {
             $('.content-section').hide();
-
-            // Show House Tours by default
             $('#house-tours').show();
 
-            // Handle click events for menu links
             $('.menu-link').click(function(e) {
                 e.preventDefault();
                 var target = $(this).data('target');
                 
                 $('.content-section').hide();
                 $(target).show();
+
+        if (target === '#house-tours') {
+            $('.latest-house-tour').show();
+        } else {
+            $('.latest-house-tour').hide();
+        }
             });
         });
     </script>

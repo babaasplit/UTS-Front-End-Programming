@@ -1,4 +1,3 @@
-/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +13,7 @@
     list-style: none;
   }
   
-  /* BASE STYLES */
+  
   body {
     background-color: #ffff;
     font-family: 'Inter', sans-serif;
@@ -22,7 +21,7 @@
     padding-top: 60px;
   }
   
-  /* NORMAL STYLES */
+
   .header {
     background-color: rgb(19, 22, 26);
     position: fixed;
@@ -38,7 +37,6 @@
     max-width: 1200px;
     padding: 0 30px;
     margin: 0 auto;
-    position: relative;
   }
   
   .logo {
@@ -58,13 +56,10 @@
   
   .nav__list {
     display: flex;
-    column-gap: 20px;
-    margin-right: 250px;
+    column-gap: 40px;
   }
   
   .nav__item {
-    position: relative;
-    position: left;
   
   }
   
@@ -241,8 +236,7 @@ margin-top: 70px;
   color: #666;
 }
 
-/* House Tours
-/* General reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -250,7 +244,6 @@ margin-top: 70px;
     font-family: "Gowun Batang", serif;
 }
 
-/* Header styling */
 header {
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -310,7 +303,6 @@ header {
     margin: 4px 0;
 }
 
-/* Menu styling */
 .main-menu {
     display: flex;
     justify-content: center;
@@ -326,7 +318,7 @@ header {
     font-weight: bold;
 }
 
-/* Promo Banner */
+
 .promo-banner {
     background-color: #e6ff47;
     padding: 10px;
@@ -341,7 +333,7 @@ header {
 }
 
 .content-section {
-    display: none; /* Initially hide all content sections */
+    display: none; 
     background-color: #f8f8f8;
     padding: 20px;
     border-radius: 8px;
@@ -360,69 +352,50 @@ header {
 }
 
 /* Bagian House Tours */
-/* Styling untuk House Tours */
+
 #house-tours {
-  text-align: center; /* Untuk memusatkan teks */
+  text-align: center; 
   margin: 0 auto;
   padding: 20px 0;
-  background-color: #00647a; /* Warna latar belakang */
+  background-color: #00647a; 
   color: #fff;
 }
 
-/* Section terbaru untuk Echo Park Home */
 .latest-house-tour {
-  display: flex;
-  justify-content: center; /* Untuk memusatkan konten secara horizontal */
-  align-items: center;     /* Untuk memastikan konten rata secara vertikal */
+  display: none;
+  justify-content: center; 
+  align-items: center;     
   margin: 20px auto;
   padding: 20px;
-  max-width: 1200px; /* Tentukan lebar maksimal */
-  background-color: #f7f7f7; /* Warna latar belakang untuk section */
-  border-radius: 8px; /* Border radius untuk efek halus */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan */
+  max-width: 1200px; 
+  background-color: #f7f7f7; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-/* Untuk gambar dan teks agar lebih teratur */
+
 .house-tour-content {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px; /* Jarak antara gambar dan teks */
+  gap: 20px; 
 }
 
-/* Gambar pada section Echo Park Home */
+
 .house-tour-img img {
   max-width: 400px;
-.img img {
-  max-width: 100%; /* Gambar akan bisa diubah ukurannya sesuai container */
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  align-items: center;
-}
-
-/* Aturan CSS untuk class decorating */
-.decorating {
-  display: flex; /* Agar gambar dan teks bisa sejajar */
-  align-items: center;
-  gap: 20px; /* Jarak antara gambar dan teks */
-  padding: 20px;
-}
-
-.decorating img {
-  max-width: 80px; /* Ukuran gambar diatur agar kecil */
   height: auto;
   border-radius: 8px;
 }
 
-/* Teks dalam konten Echo Park Home */
+
 .house-tour-text {
-  max-width: 600px; /* Batasi lebar teks agar lebih rapi */
+  max-width: 600px;
 }
 
 .house-tour-label {
   font-size: 14px;
-  color: red; /* Warna label LATEST HOUSE TOUR */
+  color: red; 
 }
 
 h1 {
@@ -447,7 +420,7 @@ p {
 }
 
 .tour-btn:hover {
-  background-color: #004a5e; /* Ubah warna saat hover */
+  background-color: #004a5e; 
 }
 
 
@@ -456,30 +429,5 @@ footer {
     padding: 20px;
     background-color: #eee;
     margin-top: 40px;
+    position: center;
 }
-.decorating h1 {
-  font-family: "Gowun Batang", serif;;
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-
-.decorating p {
-  font-style: "Gowun Batang", serif;;
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0;
-}
-
-@media screen and (max-width: 768px) {
-  /* Mobile Responsive */
-  .decorating {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .decorating img {
-    max-width: 100%;
-  }
-}
-}
-
