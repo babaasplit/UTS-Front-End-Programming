@@ -459,3 +459,234 @@ text-decoration: none;
 .footer__legal a:hover {
 text-decoration: underline;
 }
+
+/* House Tours
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gowun Batang", serif;
+}
+
+/* Header styling */
+header {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.tagline {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input[type="search"] {
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 5px 15px;
+  margin-right: 20px;
+}
+
+.login {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+}
+
+/* Menu styling */
+.main-menu {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+/* Promo Banner */
+.promo-banner {
+  background-color: #e6ff47;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Main content */
+.content {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.content-section {
+  display: none; /* Initially hide all content sections */
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 12px;
+  margin-right: 10px;
+  
+}
+
+.content-section img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 10px;
+  
+}
+
+/* Bagian House Tours */
+/* Styling untuk House Tours */
+#house-tours {
+text-align: center; /* Untuk memusatkan teks */
+margin: 0 auto;
+padding: 20px 0;
+background-color: #00647a; /* Warna latar belakang */
+color: #fff;
+}
+
+/* Section terbaru untuk Echo Park Home */
+.latest-house-tour {
+display: flex;
+justify-content: center; /* Untuk memusatkan konten secara horizontal */
+align-items: center;     /* Untuk memastikan konten rata secara vertikal */
+margin: 20px auto;
+padding: 20px;
+max-width: 1200px; /* Tentukan lebar maksimal */
+background-color: #f7f7f7; /* Warna latar belakang untuk section */
+border-radius: 8px; /* Border radius untuk efek halus */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan */
+}
+
+/* Untuk gambar dan teks agar lebih teratur */
+.house-tour-content {
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 20px; /* Jarak antara gambar dan teks */
+}
+
+/* Gambar pada section Echo Park Home */
+.house-tour-img img {
+max-width: 400px;
+height: auto;
+border-radius: 8px;
+}
+
+/* Teks dalam konten Echo Park Home */
+.house-tour-text {
+max-width: 600px; /* Batasi lebar teks agar lebih rapi */
+}
+
+.house-tour-label {
+font-size: 14px;
+color: red; /* Warna label LATEST HOUSE TOUR */
+}
+
+h1 {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+p {
+font-size: 16px;
+margin-bottom: 10px;
+}
+
+.tour-btn {
+padding: 10px 20px;
+background-color: #00647a;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+text-transform: uppercase;
+}
+
+.tour-btn:hover {
+background-color: #004a5e; /* Ubah warna saat hover */
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+  margin-top: 40px;
+}
+
+.decorating-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.decorating-item {
+  flex: 1 1 calc(25% - 20px);
+  margin: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+.decorating-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.decorating-item img {
+  width: 100%;
+  height: auto;
+}
+.decorating-item h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+}
+.decorating-item p {
+  padding: 0 10px 10px;
+  color: #555;
+}
