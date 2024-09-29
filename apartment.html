@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- SwiperJS CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -113,8 +115,69 @@
         </div>
 
         <div id="cleaning" class="content-section">
-            <h2>Cleaning</h2>
-            <p>Effective cleaning techniques for your home.</p>
+          <h2>Cleaning</h2>
+          <p>Effective cleaning techniques for your home.</p>
+
+          <div class="cleaning swiper">
+            <div class="cleaning-wrapper">
+              <ul class="cleaning-list swiper-wrapper">
+                <li class="cleaning-item swiper-slide">
+                    <a href="#" class="cleaning-link">
+                        <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_487/at%2Fart%2Fphoto%2F2020-04%2Fvacuum-stock%2Fvacuum-stock781" alt="How to Clean Your Entire Home, Step by Step"
+                        class="cleaning-image">
+                        <h3 class="cleaning-badge">How to Clean Your Entire Home, Step by Step</h3>
+                        <p class="cleaning-title">The Must-Have Guide for Cleaning Your Home (It's Beginner-Friendly!)</p>
+                        <button class="cleaning-button
+                        material-symbols-outlined">arrow_forward</button>
+                    </a>
+                </li>
+                <li class="cleaning-item swiper-slide">
+                    <a href="#" class="cleaning-link">
+                        <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_487/stock%2F80f3a74b478e5842bedc9616258e2502f193c9ce" alt="How to Do Laundry: A Forever Guide"
+                        class="cleaning-image">
+                        <h3 class="cleaning-badge">How to Do Laundry: A Forever Guide</h3>
+                        <p class="cleaning-title">The Best Way to Do Laundry (Especially If You've Never Done It Before!)</p>
+                        <button class="cleaning-button
+                        material-symbols-outlined">arrow_forward</button>
+                    </a>
+                </li>
+                <li class="cleaning-item swiper-slide">
+                    <a href="#" class="cleaning-link">
+                        <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_487/at%2Fart%2Fphoto%2F2024%2F2024-03%2F2024-03-how-to-clean-hardwood-floors%2Fhow-to-clean-hardwood-floors-694-edit" alt="The Best Way to Clean Hardwood Floors, So They Last Forever"
+                        class="cleaning-image">
+                        <h3 class="cleaning-badge">The Best Way to Clean Hardwood Floors, So They Last Forever</h3>
+                        <p class="cleaning-title">This Is the Best Way to Clean Hardwood Floors (and Maintain Them Forever)</p>
+                        <button class="cleaning-button
+                        material-symbols-outlined">arrow_forward</button>
+                    </a>
+                </li>
+                <li class="cleaning-item swiper-slide">
+                    <a href="#" class="cleaning-link">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgeG35sn2-zu6pFVcUzGh_rt4N-LEFmJ3k0A&s" alt="How to Clean Silver with Aluminum Foil and Baking Soda"
+                        class="cleaning-image">
+                        <h3 class="cleaning-badge">How to Clean Silver with Aluminum Foil and Baking Soda</h3>
+                        <p class="cleaning-title">Looking for an all-natural solution to keep silver flatware tarnish-free?</p>
+                        <button class="cleaning-button
+                        material-symbols-outlined">arrow_forward</button>
+                    </a>
+                </li>
+                <li class="cleaning-item swiper-slide">
+                    <a href="#" class="cleaning-link">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgeG35sn2-zu6pFVcUzGh_rt4N-LEFmJ3k0A&s" alt="How to Clean Silver with Aluminum Foil and Baking Soda"
+                        class="cleaning-image">
+                        <h3 class="cleaning-badge">How to Clean Silver with Aluminum Foil and Baking Soda</h3>
+                        <p class="cleaning-title">Looking for an all-natural solution to keep silver flatware tarnish-free?</p>
+                        <button class="cleaning-button
+                        material-symbols-outlined">arrow_forward</button>
+                    </a>
+                </li>
+              </ul>
+
+              <div class="swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+            </div>
+          </div>
         </div>
 
         <div id="home-projects" class="content-section">
@@ -157,6 +220,38 @@
         }
             });
         });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>const swiper = new Swiper('.cleaning-wrapper', {
+        loop: true,
+        spaceBetween: 30,
+    
+        // Pagination with dynamic bullets
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            dynamicBullets: true,
+        },
+    
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    
+        // Responsive breakpoints for different viewports
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        },
+    });
     </script>
 </body>
 </html>
