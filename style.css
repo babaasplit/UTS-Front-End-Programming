@@ -729,6 +729,44 @@ footer {
   color: #555;
 }
 
+.decorating-category {
+    display: none;
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.category-buttons button {
+  background-color: #00647a; 
+  color: white;
+  padding: 10px 20px; /* Padding inside the button */
+  margin: 0 10px; /* Space between buttons */
+  border: none; /* Remove default borders */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.category-buttons button:hover {
+  background-color: #69b1cb; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.category-buttons button:active {
+  background-color: #388e3c; /* Even darker green when clicked */
+  transform: scale(0.98); /* Shrink the button a bit when clicked */
+}
+
+.category-buttons button:focus {
+  outline: none; /* Remove the outline when focused */
+}
+
+
+
 /* Organizing Section Styles */
 #organizing {
   max-width: 1100px;
