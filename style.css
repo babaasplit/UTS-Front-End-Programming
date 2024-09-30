@@ -20,7 +20,7 @@ body {
 
 
 .header {
-  background-color: rgb(19, 22, 26);
+  background-color: rgb(255, 255, 255);
   position: fixed;
   width: 100%;
   top: 0;
@@ -43,8 +43,9 @@ body {
 }
 
 .logo__img {
-  height: 20px;
-  display: block;
+  height: 80px;
+  display:flex;
+
 }
 
 .nav__list {
@@ -53,11 +54,12 @@ body {
 }
 
 .nav__link {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(0, 0, 0, 0.75);
   font-size: 15px;
   transition: color 0.4s, transform 0.3s ease;
   position: relative;
   display: inline-block;
+  
 }
 
 .nav__link:active {
@@ -116,7 +118,7 @@ body {
 
 .search-box {
   position: fixed;
-  top: 6px;
+  top: 15px;
   right: 10px;
   display: flex;
   align-items: center;
