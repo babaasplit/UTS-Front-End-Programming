@@ -447,23 +447,28 @@
     </script>
 
 <script>
-    // JavaScript code for showing categories
+    // Function to show selected category
     function showCategory(categoryId) {
         var categories = document.getElementsByClassName('decorating-category');
         for (var i = 0; i < categories.length; i++) {
-            categories[i].style.display = 'none';
+            categories[i].style.display = 'none'; // Hide semua category
         }
 
         var selectedCategory = document.getElementById(categoryId);
         if (selectedCategory) {
-            selectedCategory.style.display = 'block';
+            selectedCategory.style.display = 'block'; // Nampilin category yang di pencet di button
         }
     }
 
+    // Initialize the page by hiding all categories (optional)
     window.onload = function() {
-        showCategory('living-room');
+        var categories = document.getElementsByClassName('decorating-category');
+        for (var i = 0; i < categories.length; i++) {
+            categories[i].style.display = 'none'; // Sembunyiin category yg ga kepilih
+        }
     };
 </script>
+
     
 </body>
 </html>
