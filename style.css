@@ -696,8 +696,9 @@ footer {
   justify-content: space-between;
   margin-top: 20px;
 }
+
 .decorating-item {
-  flex: 1 1 calc(25% - 20px);
+  flex: 1 1 calc(33.33% - 20px); /* Adjusted for 3 columns */
   margin: 10px;
   text-align: center;
   border: 1px solid #ddd;
@@ -705,18 +706,22 @@ footer {
   overflow: hidden;
   transition: transform 0.2s;
 }
+
 .decorating-item:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
+
 .decorating-item img {
   width: 100%;
   height: auto;
 }
+
 .decorating-item h3 {
   margin: 10px 0 5px;
   font-size: 1.2em;
 }
+
 .decorating-item p {
   padding: 0 10px 10px;
   color: #555;
