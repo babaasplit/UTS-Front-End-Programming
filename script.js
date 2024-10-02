@@ -17,40 +17,7 @@ if (target === '#house-tours') {
     });
 });
 
-
-// Swiper //
-const swiper = new Swiper('.cleaning-wrapper', {
-    loop: true,
-    spaceBetween: 30,
-
-    // Pagination with dynamic bullets
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        dynamicBullets: true,
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    // Responsive breakpoints for different viewports
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
-        },
-        1024: {
-            slidesPerView: 3,
-        },
-    },
-});
-
-// Function to show scroll carousel in Organizing section
+// Function to show scroll carousel
 function scrollCarousel(direction) {
     const carousel = document.querySelector('.carousel');
     const itemWidth = carousel.querySelector('.carousel-item').offsetWidth + 20;
