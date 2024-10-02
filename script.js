@@ -16,6 +16,38 @@ if (target === '#house-tours') {
 }
     });
 });
+//fungsi search container
+const searchContainer = document.querySelector('.search-container');
+const searchInput = searchContainer.querySelector('input[type="search"]');
+const houseTours = document.querySelector('.house-tours');
+
+searchInput.addEventListener('focus', () => {
+    searchContainer.classList.add('active');
+});
+
+searchInput.addEventListener('blur', () => {
+    searchContainer.classList.remove('active');
+});
+
+// Fungsi untuk mencari konten di House Tours
+function searchHouseTours() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const houseTourCards = houseTours.querySelectorAll('.house-tour-card');
+
+    houseTourCards.forEach((card) => {
+        const cardTitle = card.querySelector('.tour-category').textContent.toLowerCase();
+        const cardContent = card.querySelector('.tour-details').textContent.toLowerCase();
+
+        if (cardTitle.includes(searchTerm) || cardContent.includes(searchTerm)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+// Tambahkan event listener untuk mencari konten di House Tours ketika input field diisi
+searchInput.addEventListener('input', searchHouseTours);
 
 // Function to show scroll carousel
 function scrollCarousel(direction) {
