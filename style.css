@@ -22,8 +22,10 @@ body {
 .header {
   background-color: rgb(255, 255, 255);
   position: fixed;
-  width: 100%;
-  top: 0;
+  width:110%;
+  margin-left: -130px;
+  top:-15px
+  
 }
 
 .header__content {
@@ -116,14 +118,14 @@ body {
 
 .search-box {
   position: fixed;
-  top: 15px;
+  top: 6px;
   right: 10px;
   display: flex;
   align-items: center;
-  padding: 12px;
+  padding: 8px;
   border-radius: 30px;
   background: linear-gradient(145deg, #f0f0f0, #cacaca);
-  width: 150px;
+  width: 200px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -197,8 +199,8 @@ section{
   align-items: flex-start;
   flex-wrap: wrap;
   padding: 20px;
-  margin-left: -120px;
-  background:none 50% 50% / cover no-repeat rgb(241, 205, 249);
+  margin-left: -10px;
+  background:none 100% 100% / cover no-repeat rgb(241, 205, 300);
 }
 
 .card {
@@ -231,7 +233,10 @@ section{
   font-family: "Gowun Batang", serif;
   font-weight: 700;
   font-style: normal;
-  font-size:15px;
+  font-size:20px;
+}
+.section-header h1{
+  margin-left: -60px;
 }
 
 .section-header p{
@@ -239,7 +244,7 @@ section{
   font-weight: 700;
   font-style: normal;
   font-size:15px;
-  margin-left: -120px;
+  margin-left: -60px;
 }
 
 .questions-list {
@@ -249,7 +254,7 @@ section{
 }
 
 .question-card {
-  margin-left: -120px;
+  margin-left: -60px;
   border: 1px solid #ccc;
   padding: 20px;
   flex-basis: 110%; 
@@ -286,7 +291,7 @@ section{
   padding: 20px;
   width: 30%;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin-left: -125px;
+  margin-left: -60px;
 }
 
 .community-card h3 {
@@ -312,7 +317,7 @@ section{
   width: 30%;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin-left: -125px;
+  margin-left: -60px;
 }
 
 .expert-card img {
@@ -357,7 +362,7 @@ footer {
   padding: 100px;
   color: #333;
   font-family: 'Inter', sans-serif;
-  margin-left: -120px;
+  margin-left: -60px;
 }
 
 .footer__top {
