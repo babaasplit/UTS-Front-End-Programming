@@ -16,6 +16,37 @@ if (target === '#house-tours') {
 }
     });
 });
+
+$(".filter-btn-all").click(function() {
+    $(".cleaning-wrapper").show();
+    $(".cleaning-articles-bathroom").show();
+    $(".cleaning-articles-smells").show();
+    $(".homeprojects-wrapper").show();
+    $(".homeprojects-articles-before").show();
+    $(".homeprojects-articles-skills").show();
+});
+$(".filter-btn-bathroom").click(function() {
+    $(".cleaning-wrapper").hide();
+    $(".cleaning-articles-bathroom").show();
+    $(".cleaning-articles-smells").hide();
+});
+$(".filter-btn-smells").click(function() {
+    $(".cleaning-wrapper").hide();
+    $(".cleaning-articles-bathroom").hide();
+    $(".cleaning-articles-smells").show();
+});
+$(".filter-btn-before").click(function() {
+    $(".homeprojects-wrapper").hide();
+    $(".homeprojects-articles-before").show();
+    $(".homeprojects-articles-skills").hide();
+});
+$(".filter-btn-skills").click(function() {
+    $(".homeprojects-wrapper").hide();
+    $(".homeprojects-articles-before").hide();
+    $(".homeprojects-articles-skills").show();
+});
+
+
 //fungsi search container
 const searchContainer = document.querySelector('.search-container');
 const searchInput = searchContainer.querySelector('input[type="search"]');
@@ -49,10 +80,50 @@ function searchHouseTours() {
 // Tambahkan event listener untuk mencari konten di House Tours ketika input field diisi
 searchInput.addEventListener('input', searchHouseTours);
 
-// Function to show scroll carousel
+// Function to show scroll carousel (Organizing section)
 function scrollCarousel(direction) {
     const carousel = document.querySelector('.carousel');
     const itemWidth = carousel.querySelector('.carousel-item').offsetWidth + 20;
+    carousel.scrollBy({
+        left: direction * itemWidth,
+        behavior: 'smooth'
+    });
+}
+
+// Function to show scroll carousel (Cleaning section)
+// Bathroom
+function scrollCarousel1(direction) {
+    const carousel = document.querySelector('.carousel1');
+    const itemWidth = carousel.querySelector('.carousel-cleaning').offsetWidth + 20;
+    carousel.scrollBy({
+        left: direction * itemWidth,
+        behavior: 'smooth'
+    });
+}
+// Smells & Scents
+function scrollCarousel2(direction) {
+    const carousel = document.querySelector('.carousel2');
+    const itemWidth = carousel.querySelector('.carousel2-cleaning').offsetWidth + 20;
+    carousel.scrollBy({
+        left: direction * itemWidth,
+        behavior: 'smooth'
+    });
+}
+
+// Function to show scroll carousel (Home Projects section)
+// Before
+function scrollCarousel3(direction) {
+    const carousel = document.querySelector('.carousel3');
+    const itemWidth = carousel.querySelector('.carousel-homeprojects').offsetWidth + 20;
+    carousel.scrollBy({
+        left: direction * itemWidth,
+        behavior: 'smooth'
+    });
+}
+// Dos & Don'ts
+function scrollCarousel4(direction) {
+    const carousel = document.querySelector('.carousel4');
+    const itemWidth = carousel.querySelector('.carousel2-homeprojects').offsetWidth + 20;
     carousel.scrollBy({
         left: direction * itemWidth,
         behavior: 'smooth'

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apartment Therapy</title>
+    <link rel="icon" type="image/png" href="images/head_logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -481,7 +482,7 @@
                 <img src="images/cleaning_image.png" alt="Logo" class="logo">
                 <h2>Cleaning</h2>
             </div>
-        
+            
             <div class="cleaning-content">
                 <div class="cleaning-text">
                     <p>Welcome to your cleanest home yet. We have everything you need, from product recommendations to cleaning methods. 
@@ -492,6 +493,13 @@
                 <div class="cleaning-text1">
                     <h3 class="text1">"Effective cleaning techniques for your home."</h3>
                 </div>
+            </div>
+
+            <div class="cleaning-filter">
+                <button class="filter-btn-all">All</button>
+                <button class="filter-btn-bathroom">Bathroom</button>
+                <button class="filter-btn-smells">Smells & Scents</button>
+                <a href="community.html"><button class="filter-btn-community">See The Community</button></a>
             </div>
 
             <div class="cleaning-wrapper">
@@ -526,58 +534,208 @@
                 </ul>
             </div>
 
-            <div class="cleaning-articles">
-                <h3>Featured Organizing Solutions</h3>
+            <div class="cleaning-articles-bathroom">
+                <h3>Bathroom Cleaning Ideas</h3>
             
                 <div class="carousel-container">
-                    <button class="carousel-btn prev" onclick="scrollCarousel(-1)">&#10094;</button>
+                    <button class="carousel-btn prev" onclick="scrollCarousel1(-1)">&#10094;</button>
 
-                    <div class="carousel">
-                        <div class="carousel-item">
-                            <img src="images/organizing6.jpg" class="carousel-image">
-                            <h4>Small Space Solutions</h4>
-                            <p>Discover clever tricks to maximize every inch of your home.</p>
+                    <div class="carousel1">
+                        <div class="carousel-cleaning">
+                            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_487/at%2Forganize-clean%2F2024%2Fproduct%2Fclean-shower-with-broom-hack%2Fbroom-shower-1" class="carousel-image">
+                            <h4>Cleaning</h4>
+                            <p>I Tried the Broom Hack to Clean My Shower, and Now I'll Use It Forever</p>
                         </div>
 
-                        <div class="carousel-item">
-                            <img src="images/organizing4.jpeg" class="carousel-image">
-                            <h4>Minimalist Organizing</h4>
-                            <p>Learn how to create a minimalist space that's functional and stylish.</p>
+                        <div class="carousel-cleaning">
+                            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_487/at%2Fhouse%20tours%2F2023-House-Tours%2F2023-August%2Fananya-c%2Ftours-london-ananya-c-18" class="carousel-image">
+                            <h4>Cleaning</h4>
+                            <p>The Game-Changing $13 Find That'll Keep Your Drain Clog Free</p>
                         </div>
                         
-                        <div class="carousel-item">
-                            <img src="images/organizing5.jpg" class="carousel-image">
-                            <h4>Closet Organization Hacks</h4>
-                            <p>Organize your closet like a pro with these easy steps.</p>
+                        <div class="carousel-cleaning">
+                            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_487/at%2Fhouse%20tours%20stock%20archive%2F24d31967e32b0ec243cb941653fdc208cbd31783" class="carousel-image">
+                            <h4>Cleaning</h4>
+                            <p>The $5 Cleaner That Makes My Shower Sparkling Without Scrubbing</p>
                         </div>
 
-                        <div class="carousel-item">
-                            <img src="images/organizing7.jpg" class="carousel-image">
-                            <h4>Kitchen Organization Tips</h4>
-                            <p>Transform your kitchen into a functional and stylish space with smart storage solutions.</p>
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="images/organizing8.jpg" class="carousel-image">
-                            <h4>Seasonal Storage Solutions</h4>
-                            <p>Learn how to effectively store seasonal items like holiday decorations and summer gear.</p>
-                        </div>
-                        
-                        <div class="carousel-item">
-                            <img src="images/organizing8.png" class="carousel-image">
-                            <h4>Digital Decluttering</h4>
-                            <p>Streamline your digital life by learning effective strategies to manage files, emails, and apps.</p>
+                        <div class="carousel-cleaning">
+                            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_487/stock%2Fcustom%20stock%2Fbathroom-cleaning-apartment-therapy-26" class="carousel-image">
+                            <h4>Cleaning</h4>
+                            <p>This $10 Cleaner Erases Hard Water Stains from Tubs and Toilets with Ease</p>
                         </div>
                     </div>
                 
-                    <button class="carousel-btn next" onclick="scrollCarousel(1)">&#10095;</button>
+                    <button class="carousel-btn next" onclick="scrollCarousel1(1)">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="cleaning-articles-smells">
+                <h3>Smells & Scents</h3>
+            
+                <div class="carousel-container">
+                    <button class="carousel-btn2 prev" onclick="scrollCarousel2(-1)">&#10094;</button>
+
+                    <div class="carousel2">
+                        <div class="carousel2-cleaning">
+                            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_487/k%2Farchive%2F846942923ccefed472c205a0e573d7a3554f7fba" class="carousel-image">
+                            <h4>Cleaning</h4>
+                            <p>Cleaning Kitchens The “Salt and Coffee” Trick Will Get Rid of All Those Awful Fridge Smells</p>
+                        </div>
+
+                        <div class="carousel2-cleaning">
+                            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_487/at%2Fhouse%20tours%2Farchive%2FPeter%20Deeble%2F08302c0018d2ccc73cdced094106e497cfda4275" class="carousel-image">
+                            <h4>Cleaning</h4>
+                            <p>I Just Discovered a $1 Trick to Getting Rid of Food Smells in the Kitchen</p>
+                        </div>
+                        
+                        <div class="carousel2-cleaning">
+                            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_488/k%2FPhoto%2FRecipes%2F2019-08-how-to-cook-mahi-mahi%2F2019-07-15_Kitchn77377_How-To-Make-Mahi-Mahi" class="carousel-image">
+                            <h4>Cleaning</h4>
+                            <p>This Is the Best Way to Get Rid of Any Stubborn Fish Smells in Your House</p>
+                        </div>
+
+                        <div class="carousel2-cleaning">
+                            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_487/stock%2FGettyImages-1254789064" class="carousel-image">
+                            <h4>Cleaning</h4>
+                            <p>Hefty's Viral Pumpkin Spice-Scented Trash Bags Are Already Back for Fall (Get Yours While You Still Can!)</p>
+                        </div>
+                    </div>
+                
+                    <button class="carousel-btn2 next" onclick="scrollCarousel2(1)">&#10095;</button>
                 </div>
             </div>
         </div>
         
+        <!-- Home Projects Section -->
+
         <div id="home-projects" class="content-section">
-            <h2>Home Projects</h2>
-            <p>Ideas for your next home project.</p>
+            <div class="homeprojects-header">
+                <img src="images/home_projects_logo.png" alt="Logo" class="logo">
+                <h2>Home Projects</h2>
+            </div>
+            
+            <div class="homeprojects-content">
+                <div class="homeprojects-text">
+                    <p>From DIY projects to plants & gardening to remodeling ideas plus before & after renovation photos - here's 
+                        everything you need to tackle home projects.
+                    </p>
+                </div>
+                <div class="homeprojects-text1">
+                    <h3 class="text1">"Build Your Home However You Want."</h3>
+                </div>
+            </div>
+
+            <div class="homeprojects-filter">
+                <button class="filter-btn-all">All</button>
+                <button class="filter-btn-before">Before & Afters</button>
+                <button class="filter-btn-skills">Skills & How Tos</button>
+                <a href="community.html"><button class="filter-btn-community">See The Community</button></a>
+            </div>
+
+            <div class="homeprojects-wrapper">
+                <h2 style="color: white;">Our Top Guides</h2>
+                <ul class="homeprojects-list">
+                
+                    <li class="carousel-homeprojects">
+                        <a href="#" class="homeprojects-link">
+                            <h3 class="homeprojects-title">A Step-by-Step Guide to Nailing Your First Home Project</h3>
+                            <p class="homeprojects-description">Homes don't just chug along on their own. They require a lot of upkeep, and sometimes a lot of fixes. Overwhelmed by the thought of home maintenance and repair?</p>
+                            <button class="homeprojects-button material-symbols-outlined">arrow_forward</button>
+                        </a>
+                    </li>
+
+                    <li class="carousel-homeprojects">
+                        <a href="#" class="homeprojects-link">
+                            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_487/at%2Fhouse%20tours%2F2022-03%2FFrancesca%20%2FATFG-1077" alt="How to Hang Wallpaper, An 8-Step Guide" class="homeprojects-image">
+                            <h3 class="homeprojects-title">How to Hang Wallpaper, An 8-Step Guide</h3>
+                            <p class="homeprojects-description">It's Actually Easier Than Peel-and-Stick!</p>
+                            <button class="homeprojects-button material-symbols-outlined">arrow_forward</button>
+                        </a>
+                    </li>
+
+                    <li class="carousel-homeprojects">
+                        <a href="#" class="homeprojects-link">
+                            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_487/project%20prism%2Fcolor%20search%20archive%2Ffdca42285757a45c50328d80460f369b415e66a3" alt="How to Paint a Room, a Step-by-Step guide" class="homeprojects-image">
+                            <h3 class="homeprojects-title">How to Paint a Room, a Step-by-Step guide</h3>
+                            <p class="homeprojects-description">The Dos and Don'ts of Painting a Room: Everything You Need to Know</p>
+                            <button class="homeprojects-button material-symbols-outlined">arrow_forward</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="homeprojects-articles-before">
+                <h3>Before & Afters</h3>
+            
+                <div class="carousel-container">
+                    <button class="carousel-btn1 prev" onclick="scrollCarousel3(-1)">&#10094;</button>
+
+                    <div class="carousel3"> 
+                        <div class="carousel-homeprojects">
+                            <img src="https://cdn.apartmenttherapy.info/image/upload/t_before_flag,f_auto,q_auto:eco,c_fill,g_auto,w_800,h_534/at%2Fhouse%20tours%2F2024%2Fjuly%2Fbrandon-r%2Fbefore-after%2Fbrandon-r-living-before-1" class="carousel-image">
+                            <h4>Home Projects</h4>
+                            <p>A Bold Pink Makeover and a “Grand Library Wall” Transform This Plain Living Room</p>
+                        </div>
+
+                        <div class="carousel-homeprojects">
+                            <img src="https://cdn.apartmenttherapy.info/image/upload/t_before_flag,f_auto,q_auto:eco,c_fill,g_auto,w_800,h_534/at%2Fhome-projects%2F2024-09%2Fkatie-n-kitchen%2Fkatie-n-kitchen-before-2" class="carousel-image">
+                            <h4>Home Projects</h4>
+                            <p>An $800 Makeover Creates “a Cozy Little Cottage” Kitchen in This Big-City Apartment</p>
+                        </div>
+                        
+                        <div class="carousel-homeprojects">
+                            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_487/at%2Fhouse%20tours%2F2024%2Fjanuary%2Femily-r%2Fbefore-and-after%2Ftours-palo-alto-emily-r-before-tagged-2" class="carousel-image">
+                            <h4>Home Projects</h4>
+                            <p>Fresh Paint Gives the Old Cabinets in This “Dark, Drab” Kitchen a Breezy New Vibe</p>
+                        </div>
+
+                        <div class="carousel-homeprojects">
+                            <img src="https://cdn.apartmenttherapy.info/image/upload/t_before_flag,f_auto,q_auto:eco,c_fill,g_auto,w_2046,h_1364/at%2Fhome-projects%2F2024-09%2Fevija-r-livingroom%2Fevija-r-livingroom-before-1" class="carousel-image">
+                            <h4>Home Projects</h4>
+                            <p>A Fireplace Makeover Completely Transforms This “Dated” Living Room</p>
+                        </div>
+                    </div>
+                
+                    <button class="carousel-btn1 next" onclick="scrollCarousel3(1)">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="homeprojects-articles-skills">
+                <h3>Skills & How Tos</h3>
+            
+                <div class="carousel-container">
+                    <button class="carousel-btn4 prev" onclick="scrollCarousel4(-1)">&#10094;</button>
+
+                    <div class="carousel4">
+                        <div class="carousel2-homeprojects">
+                            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_487/project%20prism%2Fcolor%20search%20archive%2F896fd92595d43a4f2854070cc6eb7c3b16810f82" class="carousel-image">
+                            <h4>Design Ideas</h4>
+                            <p>This Easy Method Can Give You an Old-Money Patina Look in Hours</p>
+                        </div>
+
+                        <div class="carousel2-homeprojects">
+                            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_487/at%2Fart%2Fphoto%2F2024%2F2024-03%2F2024-03-how-to-paint-furniture%2Fhow-to-paint-furniture-328-EDIT" class="carousel-image">
+                            <h4>Projects & Improvements</h4>
+                            <p>The Right Way to Paint Wood Furniture (So Your Paint Job Actually Lasts)</p>
+                        </div>
+                        
+                        <div class="carousel2-homeprojects">
+                            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_487/project%20prism%2Fcolor%20search%20archive%2Ffdca42285757a45c50328d80460f369b415e66a3" class="carousel-image">
+                            <h4>Projects & Improvements</h4>
+                            <p>The Dos and Don'ts of Painting a Room: Everything You Need to Know</p>
+                        </div>
+
+                        <div class="carousel2-homeprojects">
+                            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_487/at%2Fhouse%20tours%2F2021-02%2FMargaret%20W%2F4U8A9003" class="carousel-image">
+                            <h4>Projects & Improvements</h4>
+                            <p>How to Grout Tile Like a Pro (Even If You're a Total Tile Newbie)</p>
+                        </div>
+                    </div>
+                
+                    <button class="carousel-btn4 next" onclick="scrollCarousel4(1)">&#10095;</button>
+                </div>
+            </div>
         </div>
 
         <div id="plants-yards" class="content-section">
