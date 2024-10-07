@@ -693,14 +693,14 @@ header {
 }
 
 .tour-btn {
-  padding: 10px 20px;
+  padding: 12px 24px;
   background-color: #00647a;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-transform: uppercase;
-  margin: 10px 0;
+  margin: 10px 10px;
 }
 
 .tour-btn:hover {
@@ -775,20 +775,23 @@ background-color: #004a5e; /* Ubah warna saat hover */
 
 .filter-section {
   display: flex;
-  justify-content: center;
-  gap: 15px;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 15px; 
   margin-bottom: 20px;
+  padding: 10px; 
 }
 
 .filter-btn {
   padding: 10px 25px;
   background-color: white;
   border: 2px solid #00647a;
-  border-radius: 50px; /* Rounded sides */
+  border-radius: 50px; 
   color: #00647a;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
+  white-space: nowrap; 
 }
 
 .filter-btn:hover {
