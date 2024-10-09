@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('.content-section').hide();
-    $('#house-tours').show();
+    $('#home').show();
 
     $('.menu-link').click(function(e) {
         e.preventDefault();
@@ -8,14 +8,19 @@ $(document).ready(function() {
         
         $('.content-section').hide();
         $(target).show();
-
-if (target === '#house-tours') {
-    $('.latest-house-tour').show();
-} else {
-    $('.latest-house-tour').hide();
-}
+        
+        if (target === '#house-tours') {
+            $('.latest-house-tour').show();
+        } else {
+            $('.latest-house-tour').hide();
+        }
     });
 });
+
+document.querySelector('.tour-button').addEventListener('click', function() {
+    document.querySelector('.tour-video').scrollIntoView({ behavior: 'smooth' });
+});
+
 
 $(".filter-btn-all").click(function() {
     $(".cleaning-wrapper").show();
@@ -221,5 +226,6 @@ function submitQuiz() {
     // Display the result
     document.getElementById('quiz-result').innerHTML = result;
 }
+
 
 
