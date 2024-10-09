@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Gowun Batang", serif;
+  scroll-behavior:smooth;
 }
 
 a {
@@ -1889,7 +1890,6 @@ background-color: #004a5e; /* Ubah warna saat hover */
 .nav__list {
   display: flex;
   column-gap: 40px;
-  z-index: 2; /* Ensure nav is above the search box */
 }
 
 .nav__link {
@@ -1939,58 +1939,6 @@ background-color: #004a5e; /* Ubah warna saat hover */
 .btn:hover {
   background-color: rgb(28, 128, 228);
   animation: btnHover 0.4 ease;
-}
-
-.search-box {
-  position: relative;
-  top: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  padding: 8px;
-  border-radius: 30px;
-  background: linear-gradient(145deg, #f0f0f0, #cacaca);
-  width: 200px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: fadeIn 1.5s ease;
-}
-
-.search-box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-}
-
-.search-input {
-  font-size: 16px;
-  font-family: 'Inter', sans-serif;
-  color: #555;
-  margin-left: 10px;
-  outline: none;
-  border: none;
-  background: transparent;
-  width: 100%;
-  transition: background-color 0.3s ease, padding 0.3s;
-}
-
-.search-input::placeholder {
-  color: #999;
-}
-
-.search-input:focus {
-  background-color: #eaeaea;
-  padding-left: 5px;
-  border-radius: 8px;
-}
-
-.search-icon {
-  color: #888;
-  font-size: 24px;
-  transition: color 0.3s ease;
-}
-
-.search-box:hover .search-icon {
-  color: #0071e3;
 }
 
 .container {
@@ -2164,13 +2112,14 @@ background-color: #004a5e; /* Ubah warna saat hover */
   font-weight: bold;
 }
 
-/* Footer Styles for Community Page */
 .footer {
   background-color: #b3c6ff;
   border-top: 0.5px solid #333;
   padding: 100px;
   color: #333;
   font-family: 'Inter', sans-serif;
+  margin-left: -150px;
+  margin-right: -150px;
 }
 
 .footer p{
@@ -2194,6 +2143,7 @@ background-color: #004a5e; /* Ubah warna saat hover */
 .footer__logo img {
   width: 180px;
   margin-bottom: 10px;  
+  height: 120px;
 }
 
 .footer__menu {
@@ -2328,5 +2278,330 @@ color: #333;
   to {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+/* For devices with a max-width of 1200px (large tablets and smaller desktops) */
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: 16px;
+    background-color: #e0e0e0;
+}
+}
+/* For devices with a max-width of 992px (standard tablets) */
+@media screen and (max-width: 992px) {
+  body {
+    font-size: 15px;
+    background-color: #d8d8d8;
+  }
+  .card{
+    width: 95%;
+  }
+  .title{
+    font-size: 3em;
+  }
+
+}
+/* For large tablets and smaller desktops */
+@media screen and (max-width: 1200px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-container {
+    margin-bottom: 10px;
+  }
+
+  .tagline {
+    font-size: 12px;
+  }
+
+  .search-container {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  input[type="search"] {
+    width: 60%;
+  }
+}
+
+/* For smaller tablets */
+@media screen and (max-width: 992px) {
+  .main-menu {
+    flex-direction: column;
+  }
+
+  .menu-link {
+    margin: 5px 0;
+  }
+
+  .promo-banner {
+    font-size: 14px;
+  }
+}
+
+/* For mobile phones */
+@media screen and (max-width: 768px) {
+  .header-container {
+    padding: 10px;
+  }
+
+  .logo-img {
+    width: 100px; /* Smaller logo for mobile */
+  }
+
+  .tagline {
+    font-size: 10px;
+  }
+
+  input[type="search"] {
+    width: 70%;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo-banner {
+    font-size: 12px;
+  }
+}
+
+/* For smaller mobile phones */
+@media screen and (max-width: 576px) {
+  .search-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  input[type="search"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .login {
+    width: 100%;
+    text-align: center;
+  }
+
+  .explore-section, .meet-the-team-section {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  .explore-item {
+    width: 100%; /* Ensure explore items stack */
+  }
+
+  .team-member {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .house-tour-card {
+      width: 45%; /* Two cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .house-tour-card {
+      width: 100%; /* One card per row */
+  }
+
+  .category-buttons {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .category-buttons button {
+      margin-bottom: 10px;
+      width: 100%; /* Full width for buttons */
+  }
+}
+
+@media (max-width: 480px) {
+  .house-tour-card {
+      padding: 10px; /* Add some padding for small screens */
+  }
+
+  .subscription-form {
+      flex-direction: column; /* Stack email input and button */
+  }
+
+  .subscription-form input {
+      width: 100%; /* Full width for input */
+      margin-bottom: 10px;
+  }
+
+  .subscribe-btn {
+      width: 100%; /* Full width for button */
+  }
+}
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .decorating-item {
+      flex: 1 1 calc(45% - 20px); /* 2 items per row on tablet */
+  }
+
+  .carousel-item {
+      flex: 0 0 200px; /* Smaller width for mobile */
+  }
+
+  .organizing-wrapper {
+      margin: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .decorating-item {
+      flex: 1 1 100%; /* 1 item per row on mobile */
+  }
+
+  .carousel-item {
+      flex: 0 0 150px; /* Smaller width for mobile */
+  }
+
+  .organizing-header h2 {
+      font-size: 24px; /* Smaller font size */
+  }
+
+  .organizing-item {
+      text-align: center; /* Center text for mobile */
+  }
+}
+
+/* For tablets */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .cleaning-header img, .homeprojects-header img {
+      width: 40%; /* Adjust logo size */
+  }
+
+  .cleaning-list, .homeprojects-list {
+      display: grid; /* Use grid layout */
+      grid-template-columns: repeat(2, 1fr); /* Two columns */
+      gap: 20px; /* Gap between items */
+  }
+
+  .filter-btn-all, .filter-btn-bathroom, .filter-btn-smells, .filter-btn-community {
+      width: auto; /* Auto width */
+      display: inline-block; /* Inline block */
+      margin: 5px; /* Adjust margin */
+  }
+}
+
+/* For desktops */
+@media screen and (min-width: 901px) {
+  .cleaning-list, .homeprojects-list {
+      display: grid; /* Use grid layout */
+      grid-template-columns: repeat(3, 1fr); /* Three columns */
+      gap: 20px; /* Gap between items */
+  }
+
+  .cleaning-header img, .homeprojects-header img {
+      width: 30%; /* Adjust logo size */
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 600px) {
+  .content-section {
+      padding: 15px;
+      margin: 5px;
+  }
+
+  .cleaning-header, .homeprojects-header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .cleaning-filter, .homeprojects-filter {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 15px;
+  }
+
+  .cleaning-text, .homeprojects-text {
+      text-align: center;
+  }
+
+  .cleaning-list, .homeprojects-list {
+      display: block;
+  }
+
+  .cleaning-item, .homeprojects-item {
+      margin-bottom: 20px;
+  }
+
+  .carousel-container {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .carousel-btn1, .carousel-btn2, .carousel-btn4 {
+      margin: 10px 0;
+  }
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .content-section {
+      padding: 25px;
+  }
+
+  .cleaning-wrapper, .homeprojects-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .cleaning-item, .homeprojects-item {
+      width: 48%; /* Two items per row */
+  }
+
+  .carousel-container {
+      flex-direction: row;
+  }
+
+  .carousel-btn1, .carousel-btn2, .carousel-btn4 {
+      display: inline-block;
+  }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 901px) {
+  .content-section {
+      padding: 30px;
+      margin: 15px;
+  }
+
+  .cleaning-header, .homeprojects-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .cleaning-list, .homeprojects-list {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .cleaning-item, .homeprojects-item {
+      width: 30%; /* Three items per row */
+  }
+
+  .carousel-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .carousel-btn1, .carousel-btn2, .carousel-btn4 {
+      display: inline-block;
   }
 }
