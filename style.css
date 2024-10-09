@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Gowun Batang", serif;
+  scroll-behavior:smooth;
 }
 
 a {
@@ -1772,7 +1773,6 @@ background-color: #004a5e; /* Ubah warna saat hover */
 .nav__list {
   display: flex;
   column-gap: 40px;
-  z-index: 2; /* Ensure nav is above the search box */
 }
 
 .nav__link {
