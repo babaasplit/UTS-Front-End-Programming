@@ -24,13 +24,17 @@
     <header>
         <div class="header-container">
             <div class="logo-container">
-                <a href="#" class="menu-link" data-target="#home">
-                <img src="images/apartment_logo.png" alt="Apartment Therapy Logo" class="logo-img"></a>
+                <img src="images/apartment_logo.png" alt="Apartment Therapy Logo" class="logo-img">
                 <span class="tagline">The Home You Dream Starts Here</span>
             </div>
             <div class="search-container">
                 <input type="search" placeholder="SEARCH">
-                <a href="#" class="login">LOG IN</a>
+                <a href="#" class="login">-</a>
+                <div class="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
             </div>
         </div>
 
@@ -50,418 +54,311 @@
     </div>
 
     <section class="content" id="content">
-        <!-- Home Section -->
-        <div id="home" class="content-section">
-            <div class="homepage-header">
-                <div class="homepage-content">
-                    <h1>The home you dream starts here.</h1>
-                    <p>Explore fresh ideas, organizing tips, and innovative solutions to transform your living space, no matter the size.</p>
-                    <button class="homepage-button">Contact Us</button>
-                </div>
-            </div>
-            
-            <div class="take-the-tour-section">
-                <div class="tour-wrapper">
-                    <h2>Take the Tour</h2>
-                    <div class="tour-content">
-                        <div class="tour-text">
-                            <p>Welcome to the Kendal House! Step inside and discover how the innovative layout maximizes space while providing both comfort and style. From the airy living room with its elegant decor to the cozy, functional kitchen, 
-                                every corner of the Kendal House showcases a perfect blend of aesthetics and practicality.</p>
-                            <button class="tour-button">Explore More</button>
-                        </div>
-                        <div class="tour-video">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/yjhibJ-OqxE?si=lWqDzIqV6PGCTSwD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="explore-section">
-                <h2>Explore</h2>
-                <div class="explore-menu">
-                    <div class="explore-item">
-                        <a href="#" class="menu-link" data-target="#organizing">
-                            <img src="images/explore1.png" alt="Organizing">
-                            <div class="overlay">
-                                <h3>Organizing</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="explore-item">
-                        <a href="#" class="menu-link" data-target="#decorating">
-                            <img src="images/explore2.png" alt="Decorating">
-                            <div class="overlay">
-                                <h3>Decorating</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="explore-item">
-                        <a href="#" class="menu-link" data-target="#house-tours">
-                            <img src="images/explore3.png" alt="House Tours">
-                            <div class="overlay">
-                                <h3>House Tours</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="explore-item">
-                        <a href="#" class="menu-link" data-target="#plants-yards">
-                            <img src="images/explore4.png" alt="Plants & Yards">
-                            <div class="overlay">
-                                <h3>Plants & Yards</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="explore-item">
-                        <a href="#" class="menu-link" data-target="#home-projects">
-                            <img src="images/explore5.png" alt="Home Projects">
-                            <div class="overlay">
-                                <h3>Home Projects</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="explore-item">
-                        <a href="#" class="menu-link" data-target="#cleaning">
-                            <img src="images/explore6.png" alt="Cleaning">
-                            <div class="overlay">
-                                <h3>Cleaning</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="meet-the-team-section">
-                <h2>Meet the Team</h2>
-                <p>We explore spaces far and wide to deliver the best in home organization, innovative storage solutions, 
-                    stylish decor ideas, and easy-to-follow DIY projects. Connect with us for inspiration, 
-                    tips, and advice to transform your living space—and feel free to reach out with any questions!</p>
-                <div class="team-container">
-                    <div class="team-member">
-                        <img src="images/member1.png" class="team-photo">
-                        <h3>Hillary</h3>
-                        <p>NIK</p>
-                        <a href="https://wa.me/your-phone-number" class="whatsapp-button">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                        </a>
-                    </div>
-                    <div class="team-member">
-                        <img src="images/member2.png" class="team-photo">
-                        <h3>Jenny</h3>
-                        <p>NIK</p>
-                        <a href="https://wa.me/your-phone-number" class="whatsapp-button">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                        </a>
-                    </div>
-                    <div class="team-member">
-                        <img src="images/member3.png" class="team-photo">
-                        <h3>Viezen</h3>
-                        <p>NIK</p>
-                        <a href="https://wa.me/your-phone-number" class="whatsapp-button">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                        </a>
-                    </div>
-                    <div class="team-member">
-                        <img src="images/member4.png" class="team-photo">
-                        <h3>Rocky</h3>
-                        <p>NIK</p>
-                        <a href="https://wa.me/your-phone-number" class="whatsapp-button">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-
         <!-- House Tours Section -->
         <div id="house-tours" class="content-section">
-            <div class="house-tours-heading">
-                <h2>House Tours</h2>
-                <p>Peek inside thousands of inspiring, real-life homes from all over the world.</p>
+            <h2>House Tours</h2>
+            <p>Peek inside thousands of inspiring, real-life homes from all over the world.</p>
+        </div>
+
+        <div class="latest-house-tour">
+            <div class="house-tour-content">
+                <div class="house-tour-img">
+                    <img src="images/housetours1.jpg" alt="Ciputra Park Home">
+                </div>
+                <div class="house-tour-text">
+                    <p class="house-tour-label">LATEST HOUSE TOUR</p>
+                    <h1>Experience the Charm of Ciputra Park with This $3,150-a-Month Rental</h1>
+                    <p>The expansive bay window, coupled with abundant natural light, captivated Emily and 
+                        Andrew the moment they stepped into this cozy 700-square-foot home in Los Angeles.</p>
+                    <button class="tour-btn">Explore</button>
+                </div>
             </div>
 
-            <div class="latest-house-tour">
-                <div class="house-tour-content">
-                    <div class="house-tour-img">
-                        <img src="images/housetours1.jpg">
-                    </div>
-                    <div class="house-tour-text">
-                        <p class="house-tour-label">LATEST HOUSE TOUR</p>
-                        <h1>Experience the Charm of Ciputra Park with This $3,150-a-Month Rental</h1>
-                        <p>The expansive bay window, coupled with abundant natural light, captivated Emily and 
-                            Andrew the moment they stepped into this cozy 700-square-foot home in Los Angeles.</p>
-                        <button class="tour-btn">Explore</button>
-                    </div>
+            <div class="filter-wrapper">
+                <h2>Explore House Tours</h2>
+                <div class="filter-section">
+                    <button class="filter-btn" onclick="filterTours('modern')">Modern</button>
+                    <button class="filter-btn" onclick="filterTours('rustic')">Rustic</button>
+                    <button class="filter-btn" onclick="filterTours('minimalist')">Minimalist</button>
+                    <button class="filter-btn" onclick="filterTours('mansion')">Mansion</button>
+                    <button class="filter-btn" onclick="filterTours('loft')">Loft</button>
+                    <button class="filter-btn" onclick="filterTours('beachhouse')">Beach House</button>
+                    <button class="filter-btn" onclick="filterTours('cabin')">Cabin</button>
+                    <button class="filter-btn" onclick="filterTours('penthouse')">Penthouse</button>
+                    <button class="filter-btn" onclick="filterTours('villa')">Villa</button>
+                    <button class="filter-btn" onclick="filterTours('duplex')">Duplex</button>
+                    <button class="filter-btn" onclick="filterTours('colonial')">Colonial</button>
+                    <button class="filter-btn" onclick="filterTours('chalet')">Chalet</button>
+                    <button class="filter-btn" onclick="filterTours('ranch')">Ranch</button>
+                    <button class="filter-btn" onclick="filterTours('pagoda')">Pagoda</button>
+                    <button class="filter-btn" onclick="filterTours('georgian')">Georgian</button>
+                    <button class="filter-btn" onclick="filterTours('adobe')">Adobe</button>
+                    <button class="filter-btn" onclick="filterTours('victorian')">Victorian</button>
+                    <button class="filter-btn" onclick="filterTours('mediterranean')">Mediterranean</button>
+                    <button class="filter-btn" onclick="filterTours('greekrevival')">Greek Revival</button>
+                    <button class="filter-btn" onclick="filterTours('all')">Show All</button>
                 </div>
-    
-                <div class="filter-wrapper">
-                    <h2>Explore House Tours</h2>
-                    <div class="filter-section">
-                        <button class="filter-btn" onclick="filterTours('modern')">Modern</button>
-                        <button class="filter-btn" onclick="filterTours('rustic')">Rustic</button>
-                        <button class="filter-btn" onclick="filterTours('minimalist')">Minimalist</button>
-                        <button class="filter-btn" onclick="filterTours('mansion')">Mansion</button>
-                        <button class="filter-btn" onclick="filterTours('loft')">Loft</button>
-                        <button class="filter-btn" onclick="filterTours('beachhouse')">Beach House</button>
-                        <button class="filter-btn" onclick="filterTours('cabin')">Cabin</button>
-                        <button class="filter-btn" onclick="filterTours('penthouse')">Penthouse</button>
-                        <button class="filter-btn" onclick="filterTours('villa')">Villa</button>
-                        <button class="filter-btn" onclick="filterTours('duplex')">Duplex</button>
-                        <button class="filter-btn" onclick="filterTours('colonial')">Colonial</button>
-                        <button class="filter-btn" onclick="filterTours('chalet')">Chalet</button>
-                        <button class="filter-btn" onclick="filterTours('ranch')">Ranch</button>
-                        <button class="filter-btn" onclick="filterTours('pagoda')">Pagoda</button>
-                        <button class="filter-btn" onclick="filterTours('georgian')">Georgian</button>
-                        <button class="filter-btn" onclick="filterTours('adobe')">Adobe</button>
-                        <button class="filter-btn" onclick="filterTours('victorian')">Victorian</button>
-                        <button class="filter-btn" onclick="filterTours('mediterranean')">Mediterranean</button>
-                        <button class="filter-btn" onclick="filterTours('greekrevival')">Greek Revival</button>
-                        <button class="filter-btn" onclick="filterTours('all')">Show All</button>
+            
+                <div class="house-tours">
+                    <div class="house-tour-card modern">
+                        <img src="images/housetours6.jpg" alt="Modern House">
+                        <div class="tour-category">Modern</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">Los Angeles, CA</h3>
+                            <p class="tour-price">$2,500/month</p>
+                        </div>
+                    </div>
+            
+                    <div class="house-tour-card rustic">
+                        <img src="images/housetours5.jpg" alt="Rustic House">
+                        <div class="tour-category">Rustic</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">Colorado, CO</h3>
+                            <p class="tour-price">$1,800/month</p>
+                        </div>
+                    </div>
+            
+                    <div class="house-tour-card minimalist">
+                        <img src="images/housetours4.jpg" alt="Minimalist House">
+                        <div class="tour-category">Minimalist</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">New York, NY</h3>
+                            <p class="tour-price">$2,200/month</p>
+                        </div>
+                    </div>
+            
+                    <div class="house-tour-card mansion">
+                        <img src="images/housetours3.jpg" alt="Mansion House">
+                        <div class="tour-category">Mansion</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">Beverly Hills, CA</h3>
+                            <p class="tour-price">$8,000/month</p>
+                        </div>
+                    </div>
+            
+                    <div class="house-tour-card loft">
+                        <img src="images/housetours2.jpg" alt="Loft House">
+                        <div class="tour-category">Loft</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">Downtown, NY</h3>
+                            <p class="tour-price">$3,000/month</p>
+                        </div>
+                    </div>
+            
+                    <div class="house-tour-card beachhouse">
+                        <img src="images/housetours7.jpg" alt="Beach House">
+                        <div class="tour-category">Beach House</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">Malibu, CA</h3>
+                            <p class="tour-price">$5,000/month</p>
+                        </div>
+                    </div>
+            
+                    <div class="house-tour-card cabin">
+                        <img src="images/housetours8.jpg" alt="Cabin House">
+                        <div class="tour-category">Cabin</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">Lake Tahoe, CA</h3>
+                            <p class="tour-price">$1,200/month</p>
+                        </div>
+                    </div>
+            
+                    <div class="house-tour-card penthouse">
+                        <img src="images/housetours9.jpg" alt="Penthouse">
+                        <div class="tour-category">Penthouse</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">Manhattan, NY</h3>
+                            <p class="tour-price">$10,000/month</p>
+                        </div>
+                    </div>
+            
+                    <div class="house-tour-card villa">
+                        <img src="images/housetours10.jpg" alt="Villa">
+                        <div class="tour-category">Villa</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">Miami, FL</h3>
+                            <p class="tour-price">$6,500/month</p>
+                        </div>
+                    </div>
+
+                    <div class="house-tour-card cottage">
+                        <img src="images/housetours11.jpg" alt="Cottage">
+                        <div class="tour-category">Cottage</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">Martha's Vineyard, MA</h3>
+                            <p class="tour-price">$3,000/month</p>
+                            <h3 class="tour-location">Nantucket, MA</h3>
+                            <p class="tour-price">$3,200/month</p>
+                        </div>
                     </div>
                 
-                    <div class="house-tours">
-                        <div class="house-tour-card modern">
-                            <img src="images/housetours6.jpg" alt="Modern House">
-                            <div class="tour-category">Modern</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">Los Angeles, CA</h3>
-                                <p class="tour-price">$2,500/month</p>
-                            </div>
+                    <div class="house-tour-card townhouse">
+                        <img src="images/housetours12.jpg" alt="Townhouse">
+                        <div class="tour-category">Townhouse</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">Brooklyn, NY</h3>
+                            <p class="tour-price">$4,500/month</p>
+                            <h3 class="tour-location">Boston, MA</h3>
+                            <p class="tour-price">$4,200/month</p>
                         </div>
+                    </div>
                 
-                        <div class="house-tour-card rustic">
-                            <img src="images/housetours5.jpg" alt="Rustic House">
-                            <div class="tour-category">Rustic</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">Colorado, CO</h3>
-                                <p class="tour-price">$1,800/month</p>
-                            </div>
+                    <div class="house-tour-card farmhouse">
+                        <img src="images/housetours13.jpg" alt="Farmhouse">
+                        <div class="tour-category">Farmhouse</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">Nashville, TN</h3>
+                            <p class="tour-price">$2,500/month</p>
+                            <h3 class="tour-location">Austin, TX</h3>
+                            <p class="tour-price">$2,700/month</p>
                         </div>
+                    </div>
                 
-                        <div class="house-tour-card minimalist">
-                            <img src="images/housetours4.jpg" alt="Minimalist House">
-                            <div class="tour-category">Minimalist</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">New York, NY</h3>
-                                <p class="tour-price">$2,200/month</p>
-                            </div>
+                    <div class="house-tour-card skyscraper">
+                        <img src="images/housetours14.jpg" alt="Skyscraper">
+                        <div class="tour-category">Skyscraper</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">Dubai, UAE</h3>
+                            <p class="tour-price">$15,000/month</p>
+                            <h3 class="tour-location">Shanghai, China</h3>
+                            <p class="tour-price">$14,000/month</p>
                         </div>
-                
-                        <div class="house-tour-card mansion">
-                            <img src="images/housetours3.jpg" alt="Mansion House">
-                            <div class="tour-category">Mansion</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">Beverly Hills, CA</h3>
-                                <p class="tour-price">$8,000/month</p>
-                            </div>
+                    </div>
+
+                    <div class="house-tour-card duplex">
+                        <img src="images/housetours15.jpg" alt="Duplex House">
+                        <div class="tour-category">Duplex</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">San Francisco, CA</h3>
+                            <p class="tour-price">$4,800/month</p>
                         </div>
-                
-                        <div class="house-tour-card loft">
-                            <img src="images/housetours2.jpg" alt="Loft House">
-                            <div class="tour-category">Loft</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">Downtown, NY</h3>
-                                <p class="tour-price">$3,000/month</p>
-                            </div>
-                        </div>
-                
-                        <div class="house-tour-card beachhouse">
-                            <img src="images/housetours7.jpg" alt="Beach House">
-                            <div class="tour-category">Beach House</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">Malibu, CA</h3>
-                                <p class="tour-price">$5,000/month</p>
-                            </div>
-                        </div>
-                
-                        <div class="house-tour-card cabin">
-                            <img src="images/housetours8.jpg" alt="Cabin House">
-                            <div class="tour-category">Cabin</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">Lake Tahoe, CA</h3>
-                                <p class="tour-price">$1,200/month</p>
-                            </div>
-                        </div>
-                
-                        <div class="house-tour-card penthouse">
-                            <img src="images/housetours9.jpg" alt="Penthouse">
-                            <div class="tour-category">Penthouse</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">Manhattan, NY</h3>
-                                <p class="tour-price">$10,000/month</p>
-                            </div>
-                        </div>
-                
-                        <div class="house-tour-card villa">
-                            <img src="images/housetours10.jpg" alt="Villa">
-                            <div class="tour-category">Villa</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">Miami, FL</h3>
-                                <p class="tour-price">$6,500/month</p>
-                            </div>
-                        </div>
-    
-                        <div class="house-tour-card cottage">
-                            <img src="images/housetours11.jpg" alt="Cottage">
-                            <div class="tour-category">Cottage</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">Nantucket, MA</h3>
-                                <p class="tour-price">$3,200/month</p>
-                            </div>
-                        </div>
+                    </div>
                     
-                        <div class="house-tour-card townhouse">
-                            <img src="images/housetours12.jpg" alt="Townhouse">
-                            <div class="tour-category">Townhouse</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">Boston, MA</h3>
-                                <p class="tour-price">$4,200/month</p>
-                            </div>
+                    <div class="house-tour-card colonial">
+                        <img src="images/housetours16.jpg" alt="Colonial House">
+                        <div class="tour-category">Colonial</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">Philadelphia, PA</h3>
+                            <p class="tour-price">$3,200/month</p>
                         </div>
+                    </div>
                     
-                        <div class="house-tour-card farmhouse">
-                            <img src="images/housetours13.jpg" alt="Farmhouse">
-                            <div class="tour-category">Farmhouse</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">Austin, TX</h3>
-                                <p class="tour-price">$2,700/month</p>
-                            </div>
+                    <div class="house-tour-card tudor">
+                        <img src="images/housetours17.jpg" alt="Tudor House">
+                        <div class="tour-category">Tudor</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">London, UK</h3>
+                            <p class="tour-price">£5,000/month</p>
                         </div>
+                    </div>
                     
-                        <div class="house-tour-card skyscraper">
-                            <img src="images/housetours14.jpg" alt="Skyscraper">
-                            <div class="tour-category">Skyscraper</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">Shanghai, China</h3>
-                                <p class="tour-price">$14,000/month</p>
-                            </div>
+                    <div class="house-tour-card chalet">
+                        <img src="images/housetours18.jpg" alt="Chalet">
+                        <div class="tour-category">Chalet</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">Swiss Alps, Switzerland</h3>
+                            <p class="tour-price">$7,500/month</p>
                         </div>
-    
-                        <div class="house-tour-card duplex">
-                            <img src="images/housetours15.jpg" alt="Duplex House">
-                            <div class="tour-category">Duplex</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">San Francisco, CA</h3>
-                                <p class="tour-price">$4,800/month</p>
-                            </div>
+                    </div>
+                    
+                    <div class="house-tour-card ranch">
+                        <img src="images/housetours19.jpg" alt="Ranch House">
+                        <div class="tour-category">Ranch</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">Dallas, TX</h3>
+                            <p class="tour-price">$3,000/month</p>
                         </div>
-                        
-                        <div class="house-tour-card colonial">
-                            <img src="images/housetours16.jpg" alt="Colonial House">
-                            <div class="tour-category">Colonial</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">Philadelphia, PA</h3>
-                                <p class="tour-price">$3,200/month</p>
-                            </div>
+                    </div>
+                    
+                    <div class="house-tour-card pagoda">
+                        <img src="images/housetours20.jpg" alt="Pagoda House">
+                        <div class="tour-category">Pagoda</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">Kyoto, Japan</h3>
+                            <p class="tour-price">¥1,000,000/month</p>
                         </div>
-                        
-                        <div class="house-tour-card tudor">
-                            <img src="images/housetours17.jpg" alt="Tudor House">
-                            <div class="tour-category">Tudor</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">London, UK</h3>
-                                <p class="tour-price">£5,000/month</p>
-                            </div>
+                    </div>
+                    
+                    <div class="house-tour-card georgian">
+                        <img src="images/housetours21.jpg" alt="Georgian House">
+                        <div class="tour-category">Georgian</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">Bath, UK</h3>
+                            <p class="tour-price">£4,200/month</p>
                         </div>
-                        
-                        <div class="house-tour-card chalet">
-                            <img src="images/housetours18.jpg" alt="Chalet">
-                            <div class="tour-category">Chalet</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">Swiss Alps, Switzerland</h3>
-                                <p class="tour-price">$7,500/month</p>
-                            </div>
+                    </div>
+                    
+                    <div class="house-tour-card adobe">
+                        <img src="images/housetours22.jpg" alt="Adobe House">
+                        <div class="tour-category">Adobe</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">Santa Fe, NM</h3>
+                            <p class="tour-price">$2,800/month</p>
                         </div>
-                        
-                        <div class="house-tour-card ranch">
-                            <img src="images/housetours19.jpg" alt="Ranch House">
-                            <div class="tour-category">Ranch</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">Dallas, TX</h3>
-                                <p class="tour-price">$3,000/month</p>
-                            </div>
+                    </div>
+                    
+                    <div class="house-tour-card victorian">
+                        <img src="images/housetours23.jpg" alt="Victorian House">
+                        <div class="tour-category">Victorian</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">San Francisco, CA</h3>
+                            <p class="tour-price">$6,000/month</p>
                         </div>
-                        
-                        <div class="house-tour-card pagoda">
-                            <img src="images/housetours20.jpg" alt="Pagoda House">
-                            <div class="tour-category">Pagoda</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">Kyoto, Japan</h3>
-                                <p class="tour-price">¥1,000,000/month</p>
-                            </div>
+                    </div>
+                    
+                    <div class="house-tour-card mediterranean">
+                        <img src="images/housetours24.jpg" alt="Mediterranean House">
+                        <div class="tour-category">Mediterranean</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">Barcelona, Spain</h3>
+                            <p class="tour-price">€5,500/month</p>
                         </div>
-                        
-                        <div class="house-tour-card georgian">
-                            <img src="images/housetours21.jpg" alt="Georgian House">
-                            <div class="tour-category">Georgian</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">Bath, UK</h3>
-                                <p class="tour-price">£4,200/month</p>
-                            </div>
-                        </div>
-                        
-                        <div class="house-tour-card adobe">
-                            <img src="images/housetours22.jpg" alt="Adobe House">
-                            <div class="tour-category">Adobe</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">Santa Fe, NM</h3>
-                                <p class="tour-price">$2,800/month</p>
-                            </div>
-                        </div>
-                        
-                        <div class="house-tour-card victorian">
-                            <img src="images/housetours23.jpg" alt="Victorian House">
-                            <div class="tour-category">Victorian</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">San Francisco, CA</h3>
-                                <p class="tour-price">$6,000/month</p>
-                            </div>
-                        </div>
-                        
-                        <div class="house-tour-card mediterranean">
-                            <img src="images/housetours24.jpg" alt="Mediterranean House">
-                            <div class="tour-category">Mediterranean</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">Barcelona, Spain</h3>
-                                <p class="tour-price">€5,500/month</p>
-                            </div>
-                        </div>
-                        
-                        <div class="house-tour-card greekrevival">
-                            <img src="images/housetours25.jpg" alt="Greek Revival House">
-                            <div class="tour-category">Greek Revival</div>
-                            <div class="tour-details">
-                                <h3 class="tour-location">Charleston, SC</h3>
-                                <p class="tour-price">$4,200/month</p>
-                            </div>
+                    </div>
+                    
+                    <div class="house-tour-card greekrevival">
+                        <img src="images/housetours25.jpg" alt="Greek Revival House">
+                        <div class="tour-category">Greek Revival</div>
+                        <div class="tour-details">
+                            <h3 class="tour-location">Charleston, SC</h3>
+                            <p class="tour-price">$4,200/month</p>
                         </div>
                     </div>
                 </div>
-                
-                <div class="subscription-section">
-                    <h2>Stay Updated on House Tours</h2>
-                    <p>Subscribe to receive the latest house tours directly in your inbox!</p>
-                    <form class="subscription-form">
-                        <input type="email" placeholder="Enter your email address" required>
-                        <button type="submit" class="subscribe-btn">Subscribe</button>
-                    </form>
-                </div>
+            </div>
+            
+            <div class="subscription-section">
+                <h2>Stay Updated on House Tours</h2>
+                <p>Subscribe to receive the latest house tours directly in your inbox!</p>
+                <form class="subscription-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
             </div>
         </div>
 
         <!-- Decorating Section -->
-        <div id="decorating" class="content-section">
-            <h2>Decorating</h2>
-            <p>Find inspiration for decorating your home.</p>
+        <div id="decorating" class="decorating">
+            <div class="decorating-header">
+                <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_136,h_136/at%2Fart%2Fdesign%2FSpecial-Projects%2F2024%2F07_Site-Redesign%2FIllustrations%2FCategory-Illustrations%2FAT_Category_Decorating.svg" alt="Logo" class="Decorating">
+                <h2>Decorating</h2>
+            </div>
+            <div class="decorating-content">
+                <div class="decorating-text">
+                    <p>We have all of the design ideas you need, whether you’re decorating your first apartment or filling out your forever home. Get info on trends straight from the experts, plus shopping finds, inspirational photos, and so much more.</p>
+                </div>
+                <div class="decorating-quotes">
+                    <h3 class="quotes">"Decorate Your Dreams into Reality."</h3>
+                </div>
+            </div>
 
             <div class="category-buttons">
-                <button onclick="showCategory('living-room')">Living Room</button>
-                <button onclick="showCategory('kitchen')">Kitchen</button>
-                <button onclick="showCategory('bedroom')">Bedroom</button>
-                <button onclick="showCategory('home-office')">Home Office</button>
+                <button class="category-btn" onclick="showCategory('living-room')">Living Room</button>
+                <button class="category-btn" onclick="showCategory('kitchen')">Kitchen</button>
+                <button class="category-btn" onclick="showCategory('bedroom')">Bedroom</button>
+                <button class="category-btn" onclick="showCategory('home-office')">Home Office</button>
+                <button class="category-btn" onclick="showCategory()">Show All</button>
             </div>
-            
-        
+
             <!-- Living Room Section -->
             <div class="decorating-category" id="living-room">
                 <h3>Living Room</h3>
@@ -477,13 +374,13 @@
                         <p>Design an elegant living area with chic furniture and artistic touches.</p>
                     </div>
                     <div class="decorating-item">
-                        <img src="https://th.bing.com/th/id/R.21e103c5531a74c9b3e01e8f5ee805ab?rik=uY6kIXMk0uVfDA&riu=http%3a%2f%2fcdn.home-designing.com%2fwp-content%2fuploads%2f2013%2f03%2fcontemporary-apartment-living-room.jpg&ehk=yNJ16pvzPpo6g9LTxxfzy7Oi%2bQc%2bdegv1cFzaqcxImc%3d&risl=&pid=ImgRaw&r=0 alt="Contemporary Living Room">
+                        <img src="https://th.bing.com/th/id/R.21e103c5531a74c9b3e01e8f5ee805ab?rik=uY6kIXMk0uVfDA&riu=http%3a%2f%2fcdn.home-designing.com%2fwp-content%2fuploads%2f2013%2f03%2fcontemporary-apartment-living-room.jpg&ehk=yNJ16pvzPpo6g9LTxxfzy7Oi%2bQc%2bdegv1cFzaqcxImc%3d&risl=&pid=ImgRaw&r=0" alt="Contemporary Living Room">
                         <h4>Contemporary Living Room</h4>
                         <p>Opt for a contemporary look with bold colors and sleek lines.</p>
                     </div>
                 </div>
             </div>
-        
+
             <!-- Kitchen Section -->
             <div class="decorating-category" id="kitchen">
                 <h3>Kitchen</h3>
@@ -505,7 +402,7 @@
                     </div>
                 </div>
             </div>
-        
+
             <!-- Bedroom Section -->
             <div class="decorating-category" id="bedroom">
                 <h3>Bedroom</h3>
@@ -527,11 +424,10 @@
                     </div>
                 </div>
             </div>
-        
+
             <!-- Home Office Section -->
             <div class="decorating-category" id="home-office">
                 <h3>Home Office</h3>
-
                 <div class="decorating-gallery">
                     <div class="decorating-item">
                         <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/eaa59742510311.57ceea8f6e00e.jpg" alt="Stylish Home Office">
@@ -552,10 +448,12 @@
             </div>
         </div>
 
+
+
         <!-- Organizing Section -->
         <div id="organizing" class="content-section">
             <div class="organizing-header">
-                <img src="images/explore1.png" alt="Logo" class="logo">
+                <img src="images/apartment_logo.png" alt="Logo" class="logo">
                 <h2>Organizing</h2>
             </div>
         
@@ -567,8 +465,8 @@
                         peace to your home and simplifies your life—starting now!
                     </p>
                 </div>
-                <div class="organizing-quotes">
-                    <h3 class="quotes">"Transform Your Space, Transform Your Life"</h3>
+                <div class="organizing-text1">
+                    <h3 class="text1">"Transform Your Space, Transform Your Life"</h3>
                 </div>
             </div>
 
@@ -742,9 +640,10 @@
         </div>
 
         <!-- Cleaning Section -->
+         
         <div id="cleaning" class="content-section">
             <div class="cleaning-header">
-                <img src="images/explore6.png" alt="Logo" class="logo">
+                <img src="images/cleaning_image.png" alt="Logo" class="logo">
                 <h2>Cleaning</h2>
             </div>
             
@@ -756,7 +655,7 @@
                     </p>
                 </div>
                 <div class="cleaning-text1">
-                    <h3 class="quotes">"Effective cleaning techniques for your home."</h3>
+                    <h3 class="text1">"Effective cleaning techniques for your home."</h3>
                 </div>
             </div>
 
@@ -829,12 +728,6 @@
                             <h4>Cleaning</h4>
                             <p>This $10 Cleaner Erases Hard Water Stains from Tubs and Toilets with Ease</p>
                         </div>
-
-                        <div class="carousel-cleaning">
-                            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_484/stock%2Fshutterstock_2068839167-1" class="carousel-image">
-                            <h4>Cleaning</h4>
-                            <p>I Tried the “Paper Test” to Clean My Bathroom Vents and Now I'll Never Do It Another Way</p>
-                        </div>
                     </div>
                 
                     <button class="carousel-btn next" onclick="scrollCarousel1(1)">&#10095;</button>
@@ -871,12 +764,6 @@
                             <h4>Cleaning</h4>
                             <p>Hefty's Viral Pumpkin Spice-Scented Trash Bags Are Already Back for Fall (Get Yours While You Still Can!)</p>
                         </div>
-
-                        <div class="carousel2-cleaning">
-                            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_487/at%2Fhouse%20tours%2F2022-02%2FTessa%20C%2FTessaandChandlerApartmentbyTessaCooper-11" class="carousel-image">
-                            <h4>Cleaning</h4>
-                            <p>This Luxury Brand's Dish Soap Cuts Cleaning Time in Half (It Smells So Good!)</p>
-                        </div>
                     </div>
                 
                     <button class="carousel-btn2 next" onclick="scrollCarousel2(1)">&#10095;</button>
@@ -885,9 +772,10 @@
         </div>
         
         <!-- Home Projects Section -->
+
         <div id="home-projects" class="content-section">
             <div class="homeprojects-header">
-                <img src="images/explore5.png" alt="Logo" class="logo">
+                <img src="images/home_projects_logo.png" alt="Logo" class="logo">
                 <h2>Home Projects</h2>
             </div>
             
@@ -898,7 +786,7 @@
                     </p>
                 </div>
                 <div class="homeprojects-text1">
-                    <h3 class="quotes">"Build Your Home However You Want."</h3>
+                    <h3 class="text1">"Build Your Home However You Want."</h3>
                 </div>
             </div>
 
@@ -971,12 +859,6 @@
                             <h4>Home Projects</h4>
                             <p>A Fireplace Makeover Completely Transforms This “Dated” Living Room</p>
                         </div>
-
-                        <div class="carousel-homeprojects">
-                            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_800,h_534/at%2Fhome-projects%2F2024-09%2Fkatie-n-door%2Fkatie-n-door-before-tagged-01" class="carousel-image">
-                            <h4>Home Projects</h4>
-                            <p>A $17 Upgrade Transforms the Entire Vibe of This Renter's Living Room</p>
-                        </div>
                     </div>
                 
                     <button class="carousel-btn1 next" onclick="scrollCarousel3(1)">&#10095;</button>
@@ -1013,12 +895,6 @@
                             <h4>Projects & Improvements</h4>
                             <p>How to Grout Tile Like a Pro (Even If You're a Total Tile Newbie)</p>
                         </div>
-
-                        <div class="carousel2-homeprojects">
-                            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fit,w_730,h_487/at%2Fart%2Fphoto%2F2024%2F2024-07%2F2024-07-how-to-load-a-caulk-gun%2Fhow-to-load-a-caulk-gun-396" class="carousel-image">
-                            <h4>Projects & Improvements</h4>
-                            <p>How to Load a Caulk Gun Like a Pro, According to a Handyman</p>
-                        </div>
                     </div>
                 
                     <button class="carousel-btn4 next" onclick="scrollCarousel4(1)">&#10095;</button>
@@ -1026,13 +902,11 @@
             </div>
         </div>
 
-        <!-- Plants & Yards Section -->
         <div id="plants-yards" class="content-section">
             <h2>Plants & Yards</h2>
             <p>How to make your garden thrive.</p>
         </div>
 
-        <!-- Community Section -->
         <div id="community" class="content-section">
             <a href="community.html"> <h2>Community (Click Here To See The Community)</h2> </a>
             <p>Connect with others who love home improvement.</p>
