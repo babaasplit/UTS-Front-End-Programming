@@ -2047,13 +2047,14 @@ background-color: #004a5e; /* Ubah warna saat hover */
   font-weight: bold;
 }
 
-/* Footer Styles for Community Page */
 .footer {
   background-color: #b3c6ff;
   border-top: 0.5px solid #333;
   padding: 100px;
   color: #333;
   font-family: 'Inter', sans-serif;
+  margin-left: -150px;
+  margin-right: -150px;
 }
 
 .footer p{
@@ -2077,6 +2078,7 @@ background-color: #004a5e; /* Ubah warna saat hover */
 .footer__logo img {
   width: 180px;
   margin-bottom: 10px;  
+  height: 120px;
 }
 
 .footer__menu {
