@@ -650,109 +650,6 @@ background-color: #004a5e; /* Ubah warna saat hover */
 }
 
 /* Decorating Section*/
-
-.decorating {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 60px 20px;
-  background-color: #f9f9f9;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.decorating-header {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
-.decorating-header .logo {
-  width: 60px;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
-.decorating-header .logo:hover {
-  transform: scale(1.1);
-}
-
-.decorating h2 {
-  font-size: 2.8rem;
-  font-weight: bold;
-  color: #333;
-  letter-spacing: 1px;
-}
-
-.decorating-content {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  margin-bottom: 50px;
-}
-
-.decorating-text {
-  flex: 1;
-  font-size: 1.2rem;
-  color: #555;
-  line-height: 1.8;
-  padding-right: 20px;
-  border-right: 2px solid #e0e0e0;
-}
-
-.decorating-text p {
-  margin-bottom: 20px;
-}
-
-.decorating-quotes {
-  flex: 1;
-  text-align: center;
-}
-
-.quotes {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #00647a;
-  line-height: 1.2;
-  margin-top: 20px;
-}
-
-/* Opening Banner */
-.opening-banner {
-    position: relative;
-    margin: 20px 0;
-    text-align: center;
-}
-
-.opening-banner img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px; /* Rounded corners for the banner */
-}
-
-.banner-overlay {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 8px; /* Rounded corners for the overlay */
-}
-
-.banner-overlay h3 {
-    margin: 0;
-    font-size: 2em; /* Larger font for the heading */
-}
-
-.banner-overlay p {
-    margin-top: 10px;
-    font-size: 1.2em; /* Slightly larger font for the text */
-}
-
-
 .decorating-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -800,45 +697,30 @@ background-color: #004a5e; /* Ubah warna saat hover */
   margin: 20px 0;
 }
 
-/* Explore House Tour Section (House Tours Page) */
-.category-buttons {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #ffffff;
-}
-
-.category-buttons h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 40px;
-  color: #004a5e;
-}
-
-.category-section {
-  display: flex;
-  flex-wrap: wrap; 
-  justify-content: center; 
-  gap: 15px; 
-  margin-bottom: 20px;
-  padding: 10px; 
-}
-
-.category-btn {
-  padding: 10px 25px;
-  background-color: white;
-  border: 2px solid #00647a;
-  border-radius: 50px; 
-  color: #00647a;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  white-space: nowrap; 
-}
-
-.category-btn:hover {
-  background-color: #00647a;
+.category-buttons button {
+  background-color: #00647a; 
   color: white;
+  padding: 10px 20px; /* Padding inside the button */
+  margin: 0 10px; /* Space between buttons */
+  border: none; /* Remove default borders */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.category-buttons button:hover {
+  background-color: #69b1cb; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.category-buttons button:active {
+  background-color: #388e3c; /* Even darker green when clicked */
+  transform: scale(0.98); /* Shrink the button a bit when clicked */
+}
+
+.category-buttons button:focus {
+  outline: none; /* Remove the outline when focused */
 }
 
 /* Organizing Section*/

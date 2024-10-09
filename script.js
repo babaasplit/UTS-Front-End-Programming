@@ -139,25 +139,21 @@ function scrollCarousel4(direction) {
 function showCategory(categoryId) {
     var categories = document.getElementsByClassName('decorating-category');
     for (var i = 0; i < categories.length; i++) {
-        categories[i].style.display = 'none'; // Hide all categories
+        categories[i].style.display = 'none'; // Hide semua category
     }
 
-    if (categoryId) {
-        var selectedCategory = document.getElementById(categoryId);
-        if (selectedCategory) {
-            selectedCategory.style.display = 'block'; // Show selected category
-        }
-    } else {
-        // Show all categories if no category is selected
-        for (var i = 0; i < categories.length; i++) {
-            categories[i].style.display = 'block'; // Show all categories
-        }
+    var selectedCategory = document.getElementById(categoryId);
+    if (selectedCategory) {
+        selectedCategory.style.display = 'block'; // Nampilin category yang di pencet di button
     }
 }
 
-// Initialize the page by showing all categories
+// Initialize the page by hiding all categories (optional) in Decorating section
 window.onload = function() {
-    showCategory(); // Show all categories by default
+    var categories = document.getElementsByClassName('decorating-category');
+    for (var i = 0; i < categories.length; i++) {
+        categories[i].style.display = 'none'; // Sembunyiin category yg ga kepilih
+    }
 };
 
 
