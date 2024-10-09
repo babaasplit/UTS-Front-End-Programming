@@ -227,5 +227,12 @@ function submitQuiz() {
     document.getElementById('quiz-result').innerHTML = result;
 }
 
-
+document.querySelectorAll('.menu-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+        const target = this.getAttribute('data-target');
+        if (target === '#community') {
+            window.location.href = 'community.html';
+        }
+    });
+});
 
