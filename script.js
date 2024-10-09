@@ -142,11 +142,24 @@ function showCategory(categoryId) {
         categories[i].style.display = 'none'; // Hide semua category
     }
 
-    var selectedCategory = document.getElementById(categoryId);
-    if (selectedCategory) {
-        selectedCategory.style.display = 'block'; // Nampilin category yang di pencet di button
+    if (categoryId) {
+        var selectedCategory = document.getElementById(categoryId);
+        if (selectedCategory) {
+            selectedCategory.style.display = 'block'; // Show selected category
+        }
+    } else {
+        // Show all categories if no category is selected
+        for (var i = 0; i < categories.length; i++) {
+            categories[i].style.display = 'block'; // Show all categories
+        }
     }
 }
+
+// Initialize the page by showing all categories
+window.onload = function() {
+    showCategory(); // Show all categories by default
+};
+
 
 // Initialize the page by hiding all categories (optional) in Decorating section
 window.onload = function() {
